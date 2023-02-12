@@ -122,6 +122,9 @@ for i in range(len(flashcards)):
 	if user_anwser == anwser:
 		print("GOOD")
 	else:
-		print(f'BAD --> {anwser} <--', end='\n')
-		bad_anwsers.append(anwser)
-print(bad_anwsers)
+		print(f'NO, --> {anwser} <--', end='\n')
+		second_chance = input("")
+		if second_chance == anwser:
+			pass
+		elif second_chance != anwser:
+			print("IDIOT")
